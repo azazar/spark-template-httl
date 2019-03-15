@@ -1,6 +1,16 @@
 spark-template-httl 
 ==============================================
 
+Maven dependency:
+
+```xml
+<dependency>
+    <groupId>com.github.azazar</groupId>
+    <artifactId>spark-template-httl</artifactId>
+    <version>2.8.0</version>
+</dependency>
+```
+
 How to use the Httl template route for Spark example:
 
 ```java
