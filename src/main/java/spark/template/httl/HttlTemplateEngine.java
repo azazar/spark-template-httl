@@ -32,7 +32,6 @@ import java.util.Properties;
 public class HttlTemplateEngine extends TemplateEngine {
 
     private final Engine engine;
-    private String encoding;
 
     /**
      * Constructor
@@ -41,16 +40,6 @@ public class HttlTemplateEngine extends TemplateEngine {
         Properties properties = new Properties();
         properties.setProperty("loaders", "httl.spi.loaders.ClasspathLoader");
         this.engine = Engine.getEngine(properties);
-    }
-
-    /**
-     * Constructor
-     *
-     * @param encoding The encoding to use
-     */
-    public HttlTemplateEngine(String encoding) {
-        this();
-        this.encoding = encoding;
     }
 
     /**
